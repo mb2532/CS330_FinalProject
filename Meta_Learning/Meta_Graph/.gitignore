@@ -1,0 +1,4 @@
+*.txt
+*.pkl
+settings.json
+*.env

@@ -1,0 +1,19 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            // "args": ["--epochs=100", "--model=VGAE", "--finetune", "--meta_train_edge_ratio=0.4", "--namestr=NoFinetune Ratio=0.4"]
+            //"--use_gcn_sig", 
+            "args": ["--meta_train_edge_ratio=0.1", "--model=VGAE", "--use_gcn_sig", "--encoder=GraphSignature", "--epochs=46", "--concat_fixed_feats", "--inner_steps=2", "--inner-lr=2.24e-3", "--meta-lr=2.727e-3", "--clip_grad", "--patience=2000", "--train_batch_size=1", "--dataset=PPI", "--order=2", "--namestr=2-MAML_Concat_Patience_Best_GS_PPI_Ratio=0.1"]
+        }
+    ]
+}
